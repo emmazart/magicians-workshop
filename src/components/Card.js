@@ -1,30 +1,36 @@
 import React from "react";
+import { useTheme } from "@mui/material/styles";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
-function Card(props) {
+function ItemCard(props) {
     const service = props.services;
+    const theme = useTheme();
 
     return(
         <div>
         
-        {/* if the "services" prop is set to true (ie. it is a services card), render the first option */}
+        {/* if the "services" prop is set to true (ie. it is a services ItemCard), render the first option */}
         { service ? (
-                <div>
+                <Card sx={{ m: 3, minWidth: 250, backgroundColor: `${theme.palette.primary.main}`}}>
+                    <CardContent>
                     <h3>{props.title}</h3>
                     <p>This is Services Card: {props.description}</p>
                     <p>{props.price}</p>
-                </div>
+                    </CardContent>
+                </Card>
             
             // otherwise render the gallery type card
             ) : (
-                <div>
+                <Card>
                     <h3>{props.title}</h3>
                     <p>This is Gallery Card: {props.description}</p>
                     <p>{props.image} / {props.link}</p>
-                </div>
+                </Card>
             )
         }
         </div>
     )
 }
 
-export default Card;
+export default ItemCard;

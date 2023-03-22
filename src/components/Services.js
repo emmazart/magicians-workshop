@@ -8,6 +8,11 @@ function Services() {
             title: 'my service',
             description: 'my service description', 
             price: '$$$'
+        },
+        {
+            title: 'my service',
+            description: 'my service description', 
+            price: '$$$'
         }
     ]
 
