@@ -7,12 +7,20 @@ function ItemCard(props) {
     const service = props.services;
     const theme = useTheme();
 
+    const galleryCard = {
+        m: 3, minWidth: 250, backgroundColor: '#DB504A'
+    };
+
+    const serviceCard = {
+        m: 3, minWidth: 250, backgroundColor: `${theme.palette.primary.main}` 
+    };
+
     return(
         <div>
         
         {/* if the "services" prop is set to true (ie. it is a services ItemCard), render the first option */}
         { service ? (
-                <Card sx={{ m: 3, minWidth: 250, backgroundColor: `${theme.palette.primary.main}`}}>
+                <Card sx={serviceCard}>
                     <CardContent>
                     <h3>{props.title}</h3>
                     <p>This is Services Card: {props.description}</p>
@@ -22,7 +30,7 @@ function ItemCard(props) {
             
             // otherwise render the gallery type card
             ) : (
-                <Card>
+                <Card sx={galleryCard}>
                     <h3>{props.title}</h3>
                     <p>This is Gallery Card: {props.description}</p>
                     <p>{props.image} / {props.link}</p>

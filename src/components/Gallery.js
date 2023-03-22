@@ -17,7 +17,7 @@ function Gallery() {
             {projects.map(project => {
                 return(
                 <Card 
-                    services="false"    
+                    gallery="true"    
                     title={project.title} 
                     description={project.description}
                     image={project.image}
