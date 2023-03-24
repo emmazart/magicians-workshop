@@ -1,14 +1,40 @@
 import React from "react";
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 function Nav() {
-    return (
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-    )
+
+
+   const styles = {
+        navAnchor: {
+            flexGrow: 1,
+            textDecoration: 'none',
+            color: 'black'
+        }
+    };
+
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="a" href="#about" sx={styles.navAnchor}>
+            About
+          </Typography>
+          <Typography variant="h6" component="a" href="#gallery" sx={styles.navAnchor}>
+            Gallery
+          </Typography>
+          <Typography variant="h6" component="a" href="#services" sx={styles.navAnchor}>
+            Services
+          </Typography>
+          <Typography variant="h6" component="a" href="#contact" sx={styles.navAnchor}>
+            Contact
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
 }
 
 export default Nav;
