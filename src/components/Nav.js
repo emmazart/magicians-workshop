@@ -22,8 +22,8 @@ function Nav() {
           <Typography variant="h6" component="a" href="#about" sx={styles.navAnchor}>
             About
           </Typography>
-          <Typography variant="h6" component="a" href="#gallery" sx={styles.navAnchor}>
-            Gallery
+          <Typography variant="h6" component="a" href="#work" sx={styles.navAnchor}>
+            My Work
           </Typography>
           <Typography variant="h6" component="a" href="#services" sx={styles.navAnchor}>
             Services

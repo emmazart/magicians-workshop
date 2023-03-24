@@ -16,6 +16,20 @@ const theme = createTheme({
     error: {
       main: "#DB504A"
     }
+  },
+  typography: {
+    h1: {
+      fontSize: 30,
+      padding: 10,
+      margin: 10,
+      fontStyle: 'italic',
+      // fontFamily: 'monospace'
+    },
+    h3: {
+      fontWeight: 'lighter',
+      fontSize: 45,
+    },
+  
   }
 });
 

@@ -1,17 +1,23 @@
 import React from 'react';
 import Card from '@mui/material/Card';
+import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 
 function About() {
 
+    const theme = useTheme();
     const styles = {
         container: {
             m: 3, p:3, minWidth: 250, backgroundColor: 'grey'
-        }
+        },
+        // h2: {
+        //     color: theme.palette.primary.main
+        // }
     };
 
     return (
         <Card sx={styles.container}>
-        <h2 className="content-title text-2xl">About Me</h2>
+        <Typography variant="h3" component="h2">About Me</Typography>
 
         {/* CONTAINER HOLDS IMAGE AND TEXT CONTAINER */}
         <div className="py-1 my-1 flex flex-col md:flex-row">

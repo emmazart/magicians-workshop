@@ -12,8 +12,8 @@ function Gallery() {
         }
     ]
     return(
-        <section id="gallery">
-            <h2>Gallery</h2>
+        <section id="work">
+            <h2>My Work</h2>
             {projects.map(project => {
                 return(
                 <Card 
