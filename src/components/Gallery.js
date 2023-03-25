@@ -5,10 +5,10 @@ function Gallery() {
 
     const projects = [
         {
-            title: 'a website i designed',
-            description: 'this is a website i designed',
-            image: 'this is an image',
-            link: 'link to the application'
+            title: 'All Walks Dog Training site',
+            description: 'This site was designed for a sole proprietor dog training business in 2021. Designed in Weebly/Squre with a custom domain and online store capabilities for selling workshops & classes.',
+            image: 'allwalks.png',
+            link: 'https://www.allwalksdogtraining.com/'
         }
     ]
     return(
