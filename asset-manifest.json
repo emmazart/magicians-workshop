@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/magicians-workshop/static/css/main.d0753a41.css",
+    "main.js": "/magicians-workshop/static/js/main.6638d45b.js",
+    "static/js/787.f1723887.chunk.js": "/magicians-workshop/static/js/787.f1723887.chunk.js",
+    "static/media/allwalks.png": "/magicians-workshop/static/media/allwalks.fe5427c663757ad79eef.png",
+    "static/media/profile_pic.jpg": "/magicians-workshop/static/media/profile_pic.78590362ac5263177f04.jpg",
+    "static/media/badge.png": "/magicians-workshop/static/media/badge.692487e9f18c20e8077c.png",
+    "index.html": "/magicians-workshop/index.html",
+    "main.d0753a41.css.map": "/magicians-workshop/static/css/main.d0753a41.css.map",
+    "main.6638d45b.js.map": "/magicians-workshop/static/js/main.6638d45b.js.map",
+    "787.f1723887.chunk.js.map": "/magicians-workshop/static/js/787.f1723887.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0753a41.css",
+    "static/js/main.6638d45b.js"
+  ]
+}
