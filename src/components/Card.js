@@ -39,7 +39,7 @@ function ItemCard(props) {
                         image={require("../assets/gallery/allwalks.png")}
                         title="screen shot of website">
                     </CardMedia>
-                    <a href={props.link}><p>Click to see more</p></a>
+                    <a href={props.link} style={{ textAlign: "right"}}><p>Click to see more >></p></a>
                 </Card>
             )
         }
