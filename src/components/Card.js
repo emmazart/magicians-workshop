@@ -6,10 +6,11 @@ import CardMedia from "@mui/material/CardMedia";
 
 function ItemCard(props) {
     const service = props.services;
+    const highlights = props.highlights;
     const theme = useTheme();
 
     const galleryCard = {
-        m: 3, minWidth: 250, backgroundColor: '#DB504A', p: 3
+        m: 3, minWidth: 250, backgroundColor: `${theme.palette.primary.light}`, p: 3
     };
 
     const serviceCard = {
@@ -23,9 +24,16 @@ function ItemCard(props) {
         { service ? (
                 <Card sx={serviceCard}>
                     <CardContent>
-                    <h3>{props.title}</h3>
+                    <h3 style={{fontSize: '1.5rem', borderBottom: `solid 1px ${theme.palette.primary.dark}`, paddingBottom: '10px'}}>{props.title}</h3>
                     <p>This is Services Card: {props.description}</p>
-                    <p>{props.price}</p>
+                    <ul style={{textAlign:'left', fontSize: 'smaller'}}>
+                        {highlights.map(highlight => {
+                            return(
+                                <li>{highlight}</li>
+                            )
+                        })}
+                    </ul>
+                    <p style={{fontStyle:"italic"}}>{props.price}</p>
                     </CardContent>
                 </Card>
             
@@ -39,7 +47,7 @@ function ItemCard(props) {
                         image={require("../assets/gallery/allwalks.png")}
                         title="screen shot of website">
                     </CardMedia>
-                    <a href={props.link} style={{ textAlign: "right"}}><p>Click to see more >></p></a>
+                    <a href={props.link} style={{ textAlign: "right", color: `${theme.palette.primary.darker}`}}><p>Click to see more >></p></a>
                 </Card>
             )
         }

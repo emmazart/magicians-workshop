@@ -16,7 +16,7 @@ function About() {
     };
 
     return (
-        <Card sx={styles.container}>
+        <Card id="about" sx={styles.container}>
         <Typography variant="h3" component="h2">About Me</Typography>
 
         {/* CONTAINER HOLDS IMAGE AND TEXT CONTAINER */}
