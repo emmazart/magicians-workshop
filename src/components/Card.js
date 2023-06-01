@@ -25,7 +25,7 @@ function ItemCard(props) {
                 <Card sx={serviceCard}>
                     <CardContent>
                     <h3 style={{fontSize: '1.5rem', borderBottom: `solid 1px ${theme.palette.primary.dark}`, paddingBottom: '10px'}}>{props.title}</h3>
-                    <p>This is Services Card: {props.description}</p>
+                    <p>{props.description}</p>
                     <ul style={{textAlign:'left', fontSize: 'smaller'}}>
                         {highlights.map(highlight => {
                             return(
