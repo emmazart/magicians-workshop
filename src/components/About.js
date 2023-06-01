@@ -51,6 +51,7 @@ function About() {
               and excited to join a collaborative, quality and community-driven
               team to build applications with a purpose.
             </p>
+            <p>To see my coding portfolio, <a href="https://emmazart.github.io/portfolio/">click here</a>.</p>
             <p className="my-3">
               <span className="font-bold">Languages: </span> <br />
               Javascript • MySQL & NoSQL • HTML & CSS

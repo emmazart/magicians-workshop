@@ -44,7 +44,7 @@ function ItemCard(props) {
                     <p>{props.description}</p>
                     <CardMedia
                         sx={{ height: 400 }}
-                        image={require("../assets/gallery/allwalks.png")}
+                        image={require(`../assets/gallery/${props.image}`)}
                         title="screen shot of website">
                     </CardMedia>
                     <a href={props.link} style={{ textAlign: "right", color: `${theme.palette.primary.darker}`}}><p>Click to see more >></p></a>
