@@ -33,6 +33,7 @@ function ItemCard(props) {
                             )
                         })}
                     </ul>
+                    <p>{props.range}</p>
                     <p style={{fontStyle:"italic"}}>{props.price}</p>
                     </CardContent>
                 </Card>

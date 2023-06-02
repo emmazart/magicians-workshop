@@ -8,7 +8,7 @@ function About() {
     const theme = useTheme();
     const styles = {
         container: {
-            m: 3, p:3, minWidth: 250, backgroundColor: 'grey'
+            m: 3, p:3, minWidth: 250, backgroundColor: 'lightgrey'
         },
         // h2: {
         //     color: theme.palette.primary.main
